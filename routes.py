@@ -4,7 +4,7 @@ from forms import SignupForm, LoginForm, AddressForm
 
 app = Flask(__name__)
 
-app.config['SQLALCHEMY_DATABASE_URI'] = # add your Heroku Postgres database URL here
+app.config['SQLALCHEMY_DATABASE_URI'] = 'postgres://xzwleschuzpzms:b363afcc6a44ec9bdd1e16925701b99caecc56b23aee95ce0afa014ecffa2446@ec2-54-235-168-152.compute-1.amazonaws.com:5432/d47crsigacn00r'
 db.init_app(app)
 
 app.secret_key = "development-key"
